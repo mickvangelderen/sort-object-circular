@@ -1,21 +1,27 @@
 # Usage guide
 
-This guide is for people who want to use NODE_PACKAGE_SKELETON_NAME. 
+This guide is for people who want to use sort-object-circular. 
 
 Other guides:
 * [Development guide](development.md)
 
 ## Install
 
-`npm install NODE_PACKAGE_SKELETON_NAME`
+`npm install sort-object-circular`
 
 ## Usage
 
 ```js
-import NODE_PACKAGE_SKELETON_NAME from 'NODE_PACKAGE_SKELETON_NAME'
+import sortObject from 'sort-object-circular'
 
-NODE_PACKAGE_SKELETON_USAGE
+sortObject({ b: 1, a: 2 })
+// { a: 2, b: 1 }
 ```
+
+The function:
+* sorts keys recursively,
+* clones object prototypes so you can sort class instances and
+* works for circular structures.
 
 ## Thanks
 

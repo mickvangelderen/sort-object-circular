@@ -1,12 +1,12 @@
 # Development guide
 
-This guide is for people who want to modify NODE_PACKAGE_SKELETON_NAME.
+This guide is for people who want to modify sort-object-circular.
 
 ## Setup
 
 This project requires a recent version of `node`, `npm` and `git`. It also requires the commands  `rm` and `cp` to be available.
 
-* `git clone NODE_PACKAGE_SKELETON_REPOSITORY` to get the code.
+* `git clone https://github.com/mickvangelderen/sort-object-circular` to get the code.
 * `npm run setup` to configure git. 
 
 The `npm run setup` command installs git hooks so you don't forget to do  lint, test and sort configuration files when committing and to check your node version, update, dedupe and check for possible dependency updates when pulling. It also enables the `--follow-tags` flag for git so you don't forget to push tags. 
